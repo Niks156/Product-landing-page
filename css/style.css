@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: large;
+}
+
+.container {
+    max-width: 1100px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+
+/* Here we will apply grid property to the container class as if we apply it to the navbar class then the div tag with container class will be the grid element.*/
+
+.navbar .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    /* padding: 0 1rem; */
+    /* margin: auto 100px; */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+
+.navbar {
+    margin: 1.2rem 0;
+    line-height: 1.3;
+}
+
+.navbar .container .page {
+    display: flex;
+    justify-self: center;
+}
+
+.navbar .page a:hover {
+    color: red;
+}
+
+
+/* Main section css */
+
+.main {
+    margin: 1.8rem 0;
+}
+
+.main .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    justify-content: center;
+    /*centres HORIZONTALLY */
+    align-items: center;
+    /*centres VERTICALLY */
+    /* margin: 0 6rem; */
+}
+
+.main .left h2 {
+    padding: 15px 0;
+    font-size: 2.8rem;
+}
+
+.main .left p {
+    padding: 15px 0;
+}
+
+
+/* overlay css */
+
+.section-2 {
+    position: relative;
+    overflow: hidden;
+    background: url('../img/gal39834.jpg') no-repeat bottom center/cover;
+    height: 100vh;
+}
+
+.section-2 .overlay h1 {
+    font-size: 4.5rem;
+    padding: 20px;
+}
+
+.section-2 .overlay p {
+    font-size: 1.8rem;
+    padding: 20px;
+}
+
+
+/* Gallery css */
+
+.section-c .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.section-c .gallery img,
+.section-c .gallery a {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* utilities */
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    background-color: rgb(12, 12, 12);
+    padding: 15px;
+    border: 1px solid black;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+.btn:hover {
+    background-color: rgb(44, 43, 43);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    background: rgb(39, 38, 38, 0.68);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}

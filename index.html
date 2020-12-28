@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/simple-lightbox.min.css">
+    <title>Headphones Page </title>
+</head>
+
+<body id="#home">
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>HeadPHONE</h1>
+            </div>
+            <ul class="page">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about"> About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <section class="main">
+        <div class="container">
+            <div class="left">
+                <h2>Welcome to the future of Headphones</h2>
+                <p>Lorem ipsum dolor, sit amet consr adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem accusamus ea, ut exercitationem expedita quam consectetur omnis sed temporibus? Facere magni hic quisquam nostrum
+                    quae explicabo deserunt dolorum similique? Dicta aliquid officia iure laboriosam hic lore </p>
+                <button class="btn">Read more</button>
+            </div>
+            <div class="right">
+                <img src="img/showcase.jpg" height="485px" width="410px" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- OVERLAY EFFECT USING POSTION -->
+    <section class="section-2">
+        <div class="overlay">
+
+            <h1>Mind-boggling sounds of Headphone</h1>
+            <p>We have the best collection of headphones with top notch bass. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quos debitis un
+            </p>
+
+        </div>
+    </section>
+
+    <!--  Gallery section   -->
+    <section class="section-c">
+        <div class="gallery">
+            <a href="https://i.ibb.co/CHLBZnp/gal2323.jpg" class="big">
+                <img src="https://i.ibb.co/CHLBZnp/gal2323.jpg" alt="" />
+            </a>
+            <a href="https://i.ibb.co/4pBbhfY/gal39834.jpg" class="big">
+                <img src="https://i.ibb.co/4pBbhfY/gal39834.jpg" alt="" />
+            </a>
+            <a href="https://i.ibb.co/xSnHP7g/gal43884.jpg" class="big">
+                <img src="https://i.ibb.co/xSnHP7g/gal43884.jpg" alt="" />
+            </a>
+            <a href="https://i.ibb.co/QN6Bnrb/gal4958.jpg" class="big">
+                <img src="https://i.ibb.co/QN6Bnrb/gal4958.jpg" alt="" />
+            </a>
+            <a href="https://i.ibb.co/dGZvj75/gal4545.jpg" class="big">
+                <img src="https://i.ibb.co/dGZvj75/gal4545.jpg" alt="" />
+            </a>
+            <a href="https://i.ibb.co/S6FVFNt/gal74744.jpg" class="big">
+                <img src="https://i.ibb.co/S6FVFNt/gal74744.jpg" alt="" />
+            </a>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    </script>
+    <script src="js/simple-lightbox.min.js">
+    </script>
+    <script>
+        $(function() {
+            const $gallery = $('.gallery a').simpleLightbox();
+        });
+    </script>
+</body>
+
+</html>
