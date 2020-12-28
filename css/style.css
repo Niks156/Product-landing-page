@@ -27,13 +27,12 @@ body {
     /* margin: auto 100px; */
 }
 
-a {
+.navbar .container a {
     color: black;
     text-decoration: none;
 }
 
-ul li {
-    list-style: none;
+.navbar .container ul li {
     padding: 0 10px;
     font-size: 1.5rem;
 }
@@ -115,7 +114,47 @@ ul li {
 }
 
 
+/* Footer */
+
+.footer {
+    background: rgb(44, 43, 43);
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+    color: white;
+}
+
+.footer .container a {
+    color: white;
+}
+
+.footer .container h2 {
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+}
+
+.footer .container li {
+    padding: 0.6rem 0;
+}
+
+.fab {
+    color: white;
+}
+
+
 /* utilities */
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
 
 .btn {
     display: inline-block;
@@ -147,4 +186,39 @@ ul li {
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+
+
+/* Media queries */
+
+@media (max-width: 700px) {
+    .main .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .main .container .left {
+        order: 2;
+    }
+    .main .container .right {
+        order: 1;
+    }
+    .main .container .right img {
+        height: 400px;
+        width: 300px;
+    }
+    .section-2 .overlay h1 {
+        font-size: 2rem;
+    }
+    .section-2 .overlay p {
+        font-size: 1.2rem;
+    }
+    .section-c .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.2rem;
+    }
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+    }
 }
